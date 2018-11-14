@@ -107,9 +107,10 @@
 - The overall architecture can be further optimised in terms of cost & performance.
 - The infrastructure can be further expanded using docker containers & performance can be improved by caching similar mathematical expressions
 - The interface can be further improved to upload files & final output presentation
-- I was too engrossed in solving the REGEX and Mathematical expression. As a result, I have neglected the other aspects (e.g. application integration-deployment, validation, testing, performance tuning, & documentation)
+- I was too engrossed in solving the REGEX and Mathematical expression. As a result, I have neglected the other aspects (e.g. application integration-deployment, validation, testing, performance tuning, error-handling & documentation)
 - Deployment in AWS (including the roles & permissions) can be scripted in [CloudFormation](https://aws.amazon.com/cloudformation/) template, rather than configuring it via the console. This will further improve the clarity & consistency of the implementation instructions.
 - Deployment consistency can be further improved by using AWS CICD (e.g. CodePipeline, CodeBuild & CodeDeploy)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNTc2OTU4MSwyNTg1ODMwODFdfQ==
+eyJoaXN0b3J5IjpbMTM3MTU0MjAzLDIwMDU3Njk1ODEsMjU4NT
+gzMDgxXX0=
 -->
