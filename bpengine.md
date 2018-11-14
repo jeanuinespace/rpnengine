@@ -3,20 +3,7 @@
 
 ## OVERVIEW :: UML DIAGRAM
 
-```mermaid
-sequenceDiagram
-User ->> OnlineTx (API): RESTFUL API (Browser)
-User ->> PrintAccBalances (API): Request for current balance via API
-PrintAccBalances (API) ->> SQS: Get transaction (SQSConsumer)
-PrintAccBalances (API) ->> TxAccount: getCurrentBalanceByAccounts()
-OnlineTx (API) ->> SQS: Transaction send via SNS 
-User ->> AccountTxEngine: Trigger OfflineTx() / OnlineTx() via SuccessfulTrade
-AccountTxEngine ->> FileReaderTx: Read Transaction
-AccountTxEngine ->> TxAccount: PrintAccBalance CMD: getCurrentBalanceByAccounts()
-FileReaderTx -->> bpMath: Parse Expression
-FileReaderTx -->> TxAccount: Debit / Credit Transfer
-FileReaderTx ->> TransactDB: WriteToDB
-```
+![enter image description here](https://raw.githubusercontent.com/jeanuinespace/rpnengine/master/img/sequencDiagram.png)
 
 ## IMPLEMENTATION
 
@@ -124,5 +111,5 @@ FileReaderTx ->> TransactDB: WriteToDB
 - Deployment in AWS (including the roles & permissions) can be scripted in [CloudFormation](https://aws.amazon.com/cloudformation/) template, rather than configuring it via the console. This will further improve the clarity & consistency of the implementation instructions.
 - Deployment consistency can be further improved by using AWS CICD (e.g. CodePipeline, CodeBuild & CodeDeploy)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU4NTgzMDgxXX0=
+eyJoaXN0b3J5IjpbMjAwNTc2OTU4MSwyNTg1ODMwODFdfQ==
 -->
