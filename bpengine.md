@@ -80,11 +80,12 @@
 ## TEST RESULT:
 
 - Populate 2 million records on simple addition expression (e.g. 1000.00 + 2000 = 3000.0). Total file size: 67.1MB. Please click [here](https://github.com/jeanuinespace/rpnengine/raw/master/sample.txt.zip) for the compressed sample file. (To test out the program with the file, make sure you place the file in *Logs* folder)
+- Accounts affected: 100225 & 201444
 - The following were the observations:
 	- Started at 9:21:01.pm.  Completed around 10:30p.m.
 	- Estimated time to finish: 108mins  
 	- Running on 4-threads (Playing video in the background). No error encountered.
-	- CPU & Memory consumptions are pretty consistent (I would use a more scientific way to test, if I have more time...):	![enter image description here](https://raw.githubusercontent.com/jeanuinespace/rpnengine/master/img/CPU-RAM.png)
+	- CPU & Memory consumptions are relatively consistent (I would use a more scientific way to test, if I have more time...):	![enter image description here](https://raw.githubusercontent.com/jeanuinespace/rpnengine/master/img/CPU-RAM.png)
 	- Spikes in DynamoDB (The NoSQL DB were configured to autoscale by default):
 ![enter image description here](https://raw.githubusercontent.com/jeanuinespace/rpnengine/master/img/DynamoASG.png)
 	
@@ -111,6 +112,6 @@
 - Deployment in AWS (including the roles & permissions) can be scripted in [CloudFormation](https://aws.amazon.com/cloudformation/) template, rather than configuring it via the console. This will further improve the clarity & consistency of the implementation instructions.
 - Deployment consistency can be further improved by using AWS CICD (e.g. CodePipeline, CodeBuild & CodeDeploy)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3MTU0MjAzLDIwMDU3Njk1ODEsMjU4NT
-gzMDgxXX0=
+eyJoaXN0b3J5IjpbMTU4NTgwODgzOCwxMzcxNTQyMDMsMjAwNT
+c2OTU4MSwyNTg1ODMwODFdfQ==
 -->
