@@ -47,7 +47,7 @@
 
 ## CODE FILES:
 - Code Repository & the necessary documentation (javadocs) will be sent separately via email.
-- Actual code resides in my CodeCommit repository. Separate credentials will be sent to you .
+- Actual code resides in my CodeCommit repository. The necessary links & credentials will be sent to you via email so that you can gain access to the code.
 - More information about connecting to [AWS CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-share-repository.html) (similar to GitHub - enables https/ssh access).
 
 
@@ -112,6 +112,6 @@
 - Deployment in AWS (including the roles & permissions) can be scripted in [CloudFormation](https://aws.amazon.com/cloudformation/) template, rather than configuring it via the console. This will further improve the clarity & consistency of the implementation instructions.
 - Deployment consistency can be further improved by using AWS CICD (e.g. CodePipeline, CodeBuild & CodeDeploy)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjAzODYzNTQsMTU4NTgwODgzOCwxMz
+eyJoaXN0b3J5IjpbLTIwMTQxNjIyNjgsMTU4NTgwODgzOCwxMz
 cxNTQyMDMsMjAwNTc2OTU4MSwyNTg1ODMwODFdfQ==
 -->
