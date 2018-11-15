@@ -23,9 +23,6 @@
 
 ![enter image description here](https://raw.githubusercontent.com/jeanuinespace/rpnengine/master/img/Overview-FUTURE.png)
 - **Note:**
-	- If you would like to implement the code on your local machine, you will need to uncomment the first section [1] & comment out the second section [2] of the code. 
-	- When you are ready to deploy the program on AWS server, remove the commented section [2], and comment the section [1]
-![enter image description here](https://raw.githubusercontent.com/jeanuinespace/rpnengine/master/img/Credentials.png)
 - To deploy the program on AWS:
 	- Maven Clean > Build > Install to generate the .war file
 	- .war file can be obtained from /bpengine/target/
@@ -112,6 +109,6 @@
 - Deployment in AWS (including the roles & permissions) can be scripted in [CloudFormation](https://aws.amazon.com/cloudformation/) template, rather than configuring it via the console. This will further improve the clarity & consistency of the implementation instructions.
 - Deployment consistency can be further improved by using AWS CICD (e.g. CodePipeline, CodeBuild & CodeDeploy)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTQxNjIyNjgsMTU4NTgwODgzOCwxMz
-cxNTQyMDMsMjAwNTc2OTU4MSwyNTg1ODMwODFdfQ==
+eyJoaXN0b3J5IjpbLTQzNjQ3Mzk0NiwxNTg1ODA4ODM4LDEzNz
+E1NDIwMywyMDA1NzY5NTgxLDI1ODU4MzA4MV19
 -->
